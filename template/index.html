@@ -1,0 +1,170 @@
+<!---Initialize Home Page--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta title = "House Value Predictor">
+		<link type= "text/css" rel="stylesheet" href="static\css\style.css">
+    </head>
+    <body>
+	<div class="br">
+        <!---Initialize structure of Title and house picture--->
+        <div class = "title">
+            <h1>House Value Predictor</h1>
+            
+        </div>
+        <!---Links/buttons to other websites--->
+        <div id = "menu-outer">
+            <div class = "table">
+                <ul id = "horizontal-list">
+                    <li><a href = "https://flask.palletsprojects.com/en/2.0.x/" target="_blank" class = "link"><span class = "titleLink">Python Flask</span></a></li>
+                    <li><a href = "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank" class = "link"><span class = "titleLink">Scikit-Learn</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!---Containerize main page for styling--->
+        <div class = "page">
+            <!---Containerize paragraph and form for styling--->
+            <div class = "container">
+                
+                
+                <!---Initialize form structure and inputs, set method to "POST"--->
+                <form action = "{{url_for('predict')}}" method = "post" class = "info">
+				    <br>
+					
+					
+					<p>
+                    <label>Enter Customer-ID for house: </label>
+				    <input type="number" min="1" name="cid" id="cid" placeholder="Enter C-ID for the house" />
+					</p>
+					
+					<p>
+                    <label>Date house was sold: </label>
+                    <input type="number"  min="1900" name="dayhours" id="dayhours" placeholder="Enter the sold year" />
+                    </p>
+                    
+                    <p>
+                    <label>Number of bedrooms/house: </label>
+                    <input type="number"  min="0"  name="room_bed" id="room_bed" placeholder="Number of bedroom per house"/>
+                    </p>
+                    
+                    <p>
+                    <label>Number of bathrooms/bedrooms<span style="color:red">*</span> :  </label>
+                    <input type="number"  min="0" name="room_bath" id="room_bath" placeholder="Number of bathroom per bedroom" required="required"/>
+                    </p>
+                    
+                    <p>
+                    <label>Square-footage of house<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any"  min="1" name="living_measure" id="living_measure" placeholder="Square-footage of house" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Square-footage of parking lot<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" min="1" name="lot_measure" id="lot_measure" placeholder="Square-footage of parking lot" />
+                    </p>
+                    
+					<p>
+                    <label>Total floors in house<span style="color:red">*</span> :  </label>
+                    <input type="number" min="1" name="ceil" id="ceil" placeholder="Total floors in house" />
+                    </p>
+                    
+					<p>
+                    <label>Whether house is sea facing or not<span style="color:red">*</span> :  </label>
+                    <input type="number" min="0" max="1" step="1" name="coast" id="coast" placeholder="Enter 1:YES and 0:NO" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Has been viewed<span style="color:red">*</span> :  </label>
+                        <input type="number" name="sight" id="sight" min="0" max="4" step="1"  placeholder="Enter values from 0 to 4" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>How good is the condition of house<span style="color:red">*</span> :  </label>
+                    <input type="number" name="condition" id="condition" min="1" max="5" step="1" placeholder="Enter values from 1 to 5" />
+                    </p>
+                    
+					<p>
+                    <label>Enter grading from 1 to 13<span style="color:red">*</span> :  </label>
+                    <input type="number" name="quality" id="quality" min="1" max="13" step="1"  placeholder="Enter house house grading points" required="required" />
+                    </p>
+                    
+					<p>
+                    <label>Square-footage apart from basement<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="ceil_measure" id="ceil_measure" min="1"  placeholder="Square-footage apart from basement" required="required"/>
+                    </p>
+                    
+                    <p>
+					<label>Square-footage of basement<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="basement" id="basement" min="1"  placeholder="Square-footage of basement"  />
+                    </p>
+                    
+					<p>
+                    <label>Built year<span style="color:red">*</span> :  </label>
+                    <input type="number" name="yr_built" id="yr_built" min="1900"  placeholder="Enter the year house was built" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Renovated year<span style="color:red">*</span> :  </label>
+                    <input type="number" name="yr_renovated" id="yr_renovated" min="1900" placeholder="Enter the year house was renovated" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Zipcode<span style="color:red">*</span> :  </label>
+                    <input type="number" name="zipcode" id="zipcode" min="00001" placeholder="Enter zip" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Latitude<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="lat" id="lat" placeholder="Latitude of house" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Longitude<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="long" id="long" placeholder="Longitude of house" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Square footage of living room<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="living_measure15" id="living_measure15" min="1"  placeholder="Square footage of living room in 2015" required="required"/>
+                    </p>
+                    
+					<p>
+                    <label>Square footage of lot-size<span style="color:red">*</span> :  </label>
+                    <input type="number" step="any" name="lot_measure15" id="lot_measure15" min="1"   placeholder="Square footage of lot-size in 2015" required="required"/>
+                    </p>  
+                    
+					<p>
+                    <label>House is furnished or not<span style="color:red">*</span> :  </label>
+                    <input type="number" name="furnished" id="furnished" min="0" max="1" step="1"  placeholder="Enter 1:YES and 0:NO" required="required"/>
+                    </p>
+                    
+                    <p>
+                    <label>Total square-footage of house:</label>
+                    <input type="number" step="any" name="total_area" id="total_area" min="1"  placeholder="Total square-footage of house" />
+                    </p>
+                    <br> 
+                    <br>
+					
+					<label for = "select_model"> Select your model for prediction: </label>
+					<div class="custom-select" style="width:200px;">
+					    <select name="select_model" id="select_model" class = "model">
+                            <option value="rfg" /> RandomForest Regressor
+						    <option value="xgb" /> XGB Regressor
+                        </select>
+					</div>	
+
+					<br>
+                    <button type="submit" class="btn">Predict</button>
+                </form>
+                <br> 
+                <!---Set placeholder for prediction output--->
+                <div class ="pred">
+                    <p class = "result"><b>{{ prediction_text }}</b></p>
+                </div>
+            </div>
+        </div>
+		
+    </div> 
+    </body>
+</html>
+
