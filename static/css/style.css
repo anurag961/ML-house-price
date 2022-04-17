@@ -1,0 +1,390 @@
+
+/*This section involves the overall style of main tags*/
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: #9FFFC4;;
+    background-size: cover;
+}
+.br {
+    background-image: url('https://images.unsplash.com/photo-1512359953714-f0c9a632ab85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1990&q=80');
+    opacity: 0.75;
+}
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+}
+button {
+    font-weight: bold;
+    background-color: #379683;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: #05386B;
+    border-color: #05386B;
+    font-family: Arial;
+    border-style: ridge;
+}
+
+form  { display: table; margin: 50px;      }
+p     { display: table-row; }
+label { display: table-cell; width: 100%; white-space: pre; }
+input { display: table-cell; }
+label[for=select_model]
+{
+      display: inline;
+}
+select {
+	white-space: nowrap
+}
+
+/*Margin, layout and design of paragraphs and structures*/
+.para {
+    text-align:center;
+}
+.result {
+    font-weight: bold;
+    background-color: #379683;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: #05386B;
+    border-color: #05386B;
+    font-family: Arial;
+    border-style: ridge;
+}
+.Note {
+    text-align: center;
+    color: red;
+    margin: 7px;
+    padding: 7px 0px;
+}
+.pred {
+    text-align:center;
+}
+.intro {
+    font-size: 20px;
+}
+
+
+/*Layout and structure of form body in page*/
+div.container {
+    background-color: #EDF5E1;
+    font-size: 18px;
+    margin: 3%;
+    border-radius: 10px;
+    border: 1px soid rgba)255,255,255,0.3);
+    box-shadow: 2px 2px 15px
+
+}
+
+div.page {
+    width: 700px;
+    margin: 100px auto 0px auto;
+}
+
+form.info {
+    margin: 15px;
+}
+
+/*This section involves the design of the inputs in the form*/
+input#cid {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#dayhours {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#room_bed {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#room_bath {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#living_measure {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#lot_measure {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#ceil {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#coast{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#sight {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#condition{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#quality{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#ceil_measure{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#basement {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#yr_built {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#yr_renovated {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#zipcode {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#lat {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#long {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#living_measure15{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#lot_measure15 {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#furnished {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+input#total_area {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+input#select_model{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: insert 1px 1px 5px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+
+
+/*Design of links/buttons*/
+a.link {
+    font-weight: bold;
+    background-color: #379683;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: black;
+    border-color: #05386B;
+    border-style: ridge; 
+}
+
+/*Responsible for shadow backgrounds*/
+#menu-outer {
+    height: 70px;
+    background-color: #EDF5E1;
+    font-size: 18px;
+    margin: 1%;
+    border-radius: 10px;
+    border: 1px soid rgba)255,255,255,0.3);
+}
+.table {
+    display: table;   
+    margin: 0 auto;
+    margin-left: 33.85%;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+}
+
+/*This section is concerned with the link layout*/
+a.link {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+a.scikit {
+    margin-left: 65px;
+}
+ul#horizontal-list li {
+    display: inline;
+}
+
+div.title img {
+    display:inline-block;
+    vertical-align:middle;
+}        
+
+div.title h1 {
+    text-shadow: 3px 2px 3px rgb(255 255 255 / 20%), 2px 2px 9px rgb(255 255 255 / 85%), 2px 2px 9px rgb(255 255 255 / 85%);
+    color: #05386B;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30%;
+    font-family: "Copperplate Gothic Light";
+}
+
+
+/*Animation for links*/
+a:link {color:#05386B}
+a:visited {color:black}
+a:active {color:red}
+a:hover {font-size: 120%; color:black}
+
